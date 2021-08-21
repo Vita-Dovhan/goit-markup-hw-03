@@ -59,9 +59,6 @@ img {
   margin-bottom: 25px;
 }
 
-/* .header, .main, .skills, .work, .footer{
-    outline: 1px solid red;
-} */
 .logo .part-logo {
   color: #000000;
 }
@@ -71,9 +68,7 @@ img {
 .link {
   text-decoration: none;
 }
-.navigation-list :not(:last-child) {
-  margin-right: 50px;
-}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -82,7 +77,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-right: 50px;
 }
 
 .header-item:hover,
@@ -97,7 +91,7 @@ img {
 
 .navigation-list:not(:last-child) {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 50px; 
 }
 
 .nav-contact {
