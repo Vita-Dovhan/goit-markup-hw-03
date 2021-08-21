@@ -1,146 +1,214 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>HW-2</title>
-</head>
+  </head>
+  <body>
+    <!-- page_header_content -->
 
-<body>
-<!-- page_header_content -->
-
-<header class="header">
-    <div class="container-1">
+    <header class="header">
+      <div class="container header-container">
         <a class="logo" href="/">Web<span class="part-logo">Studio</span></a>
         <!-- nav_content -->
         <nav class="navigation list">
-            <li class="gap">
-                <a class="header-item link" href="/">Студія</a>
+          <ul class="nav list">
+            <li class="navigation-list">
+              <a class="header-item link" href="/">Студія</a>
             </li>
-            <li class="gap">
-                <a class="header-item link current" href="./portfolio.html">Портфоліо</a>
+            <li class="navigation-list">
+              <a class="header-item link current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li>
-                <a class="header-item link" href="/">Контакти</a>
+            <li class="navigation-list">
+              <a class="header-item link" href="/">Контакти</a>
             </li>
+          </ul>
         </nav>
         <ul class="nav-contact list">
-            <li class="gap">
-                <a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contact-item link" href="tel:+380961111111">+38096 111 11 11</a>
-            </li>
+          <li class="navigation-list">
+            <a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contact-item link" href="tel:+380961111111">+38096 111 11 11</a>
+          </li>
         </ul>
-</header>
+      </div>
+    </header>
     <!-- main-section -->
-    <main>
-        <!-- button section -->
-        <div>
-            <h1 hidden>Про нас</h1>
-            <ul class="filter filt list">
-                <li class="filter-list">
-                    <button class="filter-button" type="button">Все</button>
-                </li>
-                <li>
-                    <button class="filter-button" type="button">Веб-сайти</button>
-                </li>
-                <li>
-                    <button class="filter-button" type="button">Додатки</button>
-                </li>
-                <li>
-                    <button class="filter-button" type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button class="filter-button" type="button">Маркетинг</button>
-                </li>
-            </ul>
+    <main class="hero">
+      <!-- button section -->
+      <div class="container">
+        <h1 hidden>Про нас</h1>
+        <ul class="filter list">
+          <li class="filter-list">
+            <button class="filter-button" type="button">Все</button>
+          </li>
+          <li class="filter-list">
+            <button class="filter-button" type="button">Веб-сайти</button>
+          </li>
+          <li class="filter-list">
+            <button class="filter-button" type="button">Додатки</button>
+          </li>
+          <li class="filter-list">
+            <button class="filter-button" type="button">Дизайн</button>
+          </li>
+          <li class="filter-list">
+            <button class="filter-button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- gallery-section -->
+        <ul class="photo list">
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img
+                src="./images/hw-second/img-1.jpg"
+                alt="сайт, на якому зображені працівники"
+                width="370"
+                height="294"
+              />
+              <div class="card-item">
+                <h2 class="description">Технокряк</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
             </div>
-            <!-- gallery-section -->
-            <div class="filt">
-            <ul class="photo list">
-                <li>
-                    <img src="./images/hw-second/img-1.jpg" alt="сайт, на якому зображені працівниками" width="370"
-                        height="294">
-                    <h2 class="description">Технокряк</h2>
-                    <p class="text">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-2.jpg" alt="гра у баскетбол" width="370" height="294">
-                    <h2 class="description">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-                    <p class="text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-3.jpg" alt="логотип ресторану Seafood">
-                    <h2 class="description">Ресторан <span lang="en">Seafood</span></h2>
-                    <p class="text">Додаток</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-4.jpg" alt="навушники" width="370" height="294">
-                    <h2 class="description">Проєкт <span lang="en">Prime</span></h2>
-                    <p class="text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-5.jpg" alt="біла і коричнева коробочки" width="370" height="294">
-                    <h2 class="description">Проєкт <span lang="en">Boxes</span></h2>
-                    <p class="text">Додаток</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-6.jpg" alt="монітор, на якому зображений веб-сайт">
-                    <h2 lang="en" class="description">Inspiration has no Borders</h2>
-                    <p class="text">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-7.jpg" alt="розгорнута книжка" width="370" height="294">
-                    <h2 class="description">Видання <span lang="en">Limited Edition</span></h2>
-                    <p class="text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-8.jpg" alt="біла бірка" width="370" height="294">
-                    <h2 class="description">Проєкт <span lang="en">LAB</span></h2>
-                    <p class="text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/hw-second/img-9.jpg" alt="Застосування додатку Growing Business" width="370"
-                        height="294">
-                    <h2 lang="en" class="description">Growing Business</h2>
-                    <p class="text">Додаток</p>
-                </li>
-            </ul>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img
+                src="./images/hw-second/img-2.jpg"
+                alt="гра у баскетбол"
+                width="370"
+                height="294"
+              />
+              <div class="card-item">
+                <h2 class="description">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                <p class="text">Дизайн</p>
+              </div>
             </div>
-            </section>
-        </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img src="./images/hw-second/img-3.jpg" alt="логотип ресторану Seafood" />
+              <div class="card-item">
+                <h2 class="description">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="text">Додаток</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img src="./images/hw-second/img-4.jpg" alt="навушники" width="370" height="294" />
+              <div class="card-item">
+                <h2 class="description">Проєкт <span lang="en">Prime</span></h2>
+                <p class="text">Маркетинг</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img
+                src="./images/hw-second/img-5.jpg"
+                alt="біла і коричнева коробочки"
+                width="370"
+                height="294"
+              />
+              <div class="card-item">
+                <h2 class="description">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="text">Додаток</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img src="./images/hw-second/img-6.jpg" alt="монітор, на якому зображений веб-сайт" />
+              <div class="card-item">
+                <h2 lang="en" class="description">Inspiration has no Borders</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img
+                src="./images/hw-second/img-7.jpg"
+                alt="розгорнута книжка"
+                width="370"
+                height="294"
+              />
+              <div class="card-item">
+                <h2 class="description">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="text">Дизайн</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img src="./images/hw-second/img-8.jpg" alt="біла бірка" width="370" height="294" />
+              <div class="card-item">
+                <h2 class="description">Проєкт <span lang="en">LAB</span></h2>
+                <p class="text">Маркетинг</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo-list">
+            <div class="gallery-wrap">
+              <img
+                src="./images/hw-second/img-9.jpg"
+                alt="Застосування додатку Growing Business"
+                width="370"
+                height="294"
+              />
+              <div class="card-item">
+                <h2 lang="en" class="description">Growing Business</h2>
+                <p class="text">Додаток</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <!-- page_footer_content -->
-    <footer class="footer-section">
-        <div class="container">
-            <a class="logo" href="/">Web<span class="part-logo-footer">Studio</span></a>
-            <address>
-                <ul class="address list">
-                    <li>
-                        <a class="address-contact link"
-                            href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383859?hl=uk"
-                            target="_blank" rel="noopener noreferrer">м. Київ, б-р Лесі Українки, 26</a>
-                    </li>
-                    <li>
-                        <a class="address-item link" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li>
-                        <a class="address-item link" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-        </div>
-    </footer>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="/">Web<span class="part-logo-footer">Studio</span></a>
+        <address>
+          <ul class="footer-address list">
+            <li class="footer-list">
+              <a
+                class="address-contact link"
+                href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383859?hl=uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                >м. Київ, б-р Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="address-item gap link" href="mailto:info@example.com">info@example.com</a>
+            </li>
 
+            <li>
+              <a class="address-item link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>
